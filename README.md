@@ -1,99 +1,112 @@
+:::writing{variant=“standard” id=“47321”}
+
 <div align="center">
 
-# ⚡ Quantum-Assisted Energy-Aware Routing Optimization
 
-### Sustainable Routing Optimization in Communication Networks using Quantum-Inspired Techniques
+⚡ Quantum-Inspired Energy-Aware Routing Optimization
 
-A MATLAB-based simulation framework that evaluates **energy-aware and carbon-aware routing strategies** in communication networks and compares classical routing algorithms with a **quantum-assisted optimization approach using QAOA-inspired cost functions.**
+Sustainable Routing Optimization in Communication Networks using Quantum-Inspired Techniques
 
-Built to explore **green networking, multi-objective optimization, and quantum-inspired routing algorithms.**
+A MATLAB-based simulation framework that evaluates energy-aware and carbon-aware routing strategies in communication networks and compares classical routing algorithms with a quantum-inspired optimization approach using QUBO-based cost functions.
+
+Built to explore green networking, multi-objective optimization, and quantum-inspired routing algorithms.
 
 </div>
 
----
 
-## 🚀 Project Overview
 
-Modern communication networks consume significant energy due to the rapid growth of **cloud computing, IoT systems, and data-intensive services**. Traditional routing algorithms typically optimize **latency or hop count** while ignoring energy consumption and carbon emissions.
+⸻
 
-This project implements a **quantum-assisted routing optimization framework** that integrates:
+🚀 Project Overview
 
-- ⚡ Energy consumption
-- 🌍 Carbon intensity
-- ⏱ Network latency
+Modern communication networks consume significant energy due to the rapid growth of cloud computing, IoT systems, and data-intensive services. Traditional routing algorithms typically optimize latency or hop count while ignoring energy consumption and carbon emissions.
 
-into a **multi-objective routing cost function**.
+This project implements a quantum-inspired routing optimization framework that integrates:
+	•	⚡ Energy consumption
+	•	🌍 Carbon intensity
+	•	⏱ Network latency
 
-The routing problem is formulated as a **Quadratic Unconstrained Binary Optimization (QUBO)** model and solved using a **QAOA-inspired optimization approach**.
+into a multi-objective routing cost function.
 
-The framework simulates network routing using a **Waxman topology model** and evaluates performance across **multiple traffic flows**.
+The routing problem is formulated as a Quadratic Unconstrained Binary Optimization (QUBO) model inspired by quantum optimization methods such as QAOA. The optimization itself is executed using classical computation within MATLAB, allowing evaluation of quantum-inspired strategies without requiring quantum hardware.
 
----
+The framework simulates network routing using a Waxman topology model and evaluates performance across 300 traffic flows.
 
-## ✨ Features
+⸻
 
-- Simulation of communication networks using **Waxman probabilistic topology**
-- Implementation of **three routing algorithms:**
-  - Shortest Path Routing
-  - Energy-Aware Smart Routing
-  - Quantum-Assisted Routing (QAOA-inspired)
-- Multi-objective routing optimization
-- Energy and carbon-aware path selection
-- Packet flow visualization across the network
-- Comparative performance analysis
-- Visualization of routing paths and network topology
-- Statistical evaluation across **200 traffic flows**
+✨ Features
+	•	Simulation of communication networks using Waxman probabilistic topology
+	•	Implementation of three routing algorithms
+	•	Shortest Path Routing
+	•	Energy-Aware Smart Routing
+	•	Quantum-Inspired Routing (QUBO-based optimization)
+	•	Multi-objective routing optimization
+	•	Energy- and carbon-aware path selection
+	•	Packet flow visualization across the network
+	•	Comparative performance analysis of routing strategies
+	•	Visualization of routing paths and generated network topology
+	•	Statistical evaluation across 300 simulated traffic flows
 
----
+⸻
 
-## 🧠 Routing Algorithms
+🧠 Routing Algorithms
 
-### 1. Shortest Path Routing
+1. Shortest Path Routing
 
-Classical routing strategy that minimizes latency using **Dijkstra's algorithm** to compute the minimum-cost path between nodes.
-```
+Classical routing strategy that minimizes latency using Dijkstra’s algorithm to compute the minimum-cost path between nodes.
+
 Cost = Latency
-```
 
-### 2. Energy-Aware Routing
 
-Extends shortest-path routing by incorporating energy consumption into routing decisions.
-```
+⸻
+
+2. Energy-Aware Routing
+
+Extends shortest-path routing by incorporating link-level energy consumption into routing decisions.
+
 Cost = w₁ · Latency + w₂ · Energy
-```
 
-### 3. Quantum-Assisted Routing
+This method favors routes that reduce electrical power consumption while maintaining reasonable latency.
 
-A quantum-inspired optimization approach that solves a **multi-objective routing problem**, inspired by the **Quantum Approximate Optimization Algorithm (QAOA)**.
-```
+⸻
+
+3. Quantum-Inspired Routing
+
+A multi-objective routing optimization approach inspired by quantum algorithms such as QAOA.
+
+The routing objective integrates latency, energy consumption, and carbon intensity:
+
 F = α · Latency + β · Energy + γ · Carbon
-```
 
----
+The routing problem is formulated as a QUBO optimization model, and candidate routing paths are evaluated using classical computation to identify routes that minimize the combined sustainability cost.
 
-## 📊 Performance Metrics
+⸻
 
-| Metric | Description |
-|--------|-------------|
-| ⚡ **Energy Consumption** | Total electrical energy required to transmit data across the selected routing path |
-| 🌍 **Carbon Emissions** | Environmental impact calculated using the carbon intensity of network nodes |
-| 📈 **Path Efficiency Indicator (PEI)** | Composite metric combining link efficiency and hardware energy efficiency |
+📊 Performance Metrics
 
----
+Metric	Description
+⚡ Energy Consumption	Total electrical energy required to transmit data across the selected routing path
+🌍 Carbon Emissions	Environmental impact calculated using the carbon intensity associated with network nodes
+📈 Path Efficiency Indicator (PEI)	Composite metric combining link efficiency and hardware energy utilization
 
-## 🛠️ Tech Stack
+
+⸻
+
+🛠️ Tech Stack
 
 <p>
-  <img src="https://img.shields.io/badge/MATLAB-R2023+-0076A8?style=for-the-badge&logo=Mathworks&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Network%20Simulation-Graph%20Theory-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Optimization-QAOA%20Inspired-purple?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Visualization-MATLAB%20Plots-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/MATLAB-R2023+-0076A8?style=for-the-badge&logo=Mathworks&logoColor=white"/>
+<img src="https://img.shields.io/badge/Network%20Simulation-Graph%20Theory-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Optimization-QUBO%20Model-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Visualization-MATLAB%20Plots-green?style=for-the-badge"/>
 </p>
 
----
 
-## 📂 Project Structure
-```
+
+⸻
+
+📂 Project Structure
+
 quantum-routing-optimization/
 │
 ├── main_simulation.m
@@ -110,70 +123,72 @@ quantum-routing-optimization/
 │
 ├── plot_results.m
 ├── plot_network_topology.m
-├── plot_routing_path.m
 ├── animate_packet_flow.m
 │
 └── README.md
-```
 
----
 
-## 🔄 Simulation Workflow
-```
+⸻
+
+🔄 Simulation Workflow
+
 Network Generation → Waxman Topology Creation → Link Metric Assignment
-       (Latency / Energy / Carbon)
-              ↓
-  Candidate Path Generation (Yen's K-Shortest Paths)
-              ↓
-   Routing Algorithm Execution
-   (Shortest / Energy-Aware / Quantum)
-              ↓
-  Performance Evaluation (Energy / Carbon / PEI)
-              ↓
-       Visualization & Analysis
-```
+      (Latency / Energy / Carbon)
+             ↓
+ Candidate Path Generation (Yen's K-Shortest Paths)
+             ↓
+  Routing Algorithm Execution
+  (Shortest / Energy-Aware / Quantum-Inspired)
+             ↓
+ Performance Evaluation (Energy / Carbon / PEI)
+             ↓
+      Visualization & Analysis
 
----
 
-## ⚙️ Installation & Setup
+⸻
 
-**1. Clone the repository**
-```bash
+⚙️ Installation & Setup
+
+1. Clone the repository
+
 git clone https://github.com/YOUR-USERNAME/quantum-routing-optimization.git
-```
 
-**2. Navigate into the project**
-```bash
+2. Navigate into the project
+
 cd quantum-routing-optimization
-```
 
-**3. Run the simulation**
+3. Run the simulation
 
 Open MATLAB and run:
-```matlab
+
 main_simulation
-```
 
-This will generate the network topology, run routing simulations, compute performance metrics, visualize routing paths, and display packet flow animations.
+The simulation will:
+	•	Generate the Waxman network topology
+	•	Assign latency, energy, and carbon metrics
+	•	Execute the routing algorithms
+	•	Evaluate performance metrics
+	•	Visualize routing paths and packet flows
+	•	Generate comparative performance plots
 
----
+⸻
 
-## 🎯 Learning Goals
+🎯 Learning Goals
 
 This project explores concepts from:
+	•	Green Networking
+	•	Multi-Objective Optimization
+	•	Network Routing Algorithms
+	•	Quantum-Inspired Optimization Methods
+	•	Graph Theory in Communication Networks
+	•	MATLAB-Based Network Simulation
 
-- Green Networking
-- Multi-objective optimization
-- Network routing algorithms
-- Quantum-inspired optimization methods
-- Graph theory in communication networks
-- MATLAB-based network simulation
+⸻
 
----
+⚠️ Disclaimer
 
-## ⚠️ Disclaimer
+This project is a research simulation for educational purposes.
 
-This project is a **research simulation for educational purposes.**
-The quantum-assisted routing method is a **classical simulation inspired by QAOA**, not an implementation on real quantum hardware.
+The quantum-inspired routing approach is inspired by QAOA and QUBO optimization models, but the optimization is executed using classical computation in MATLAB rather than real quantum hardware.
+:::
 
----
