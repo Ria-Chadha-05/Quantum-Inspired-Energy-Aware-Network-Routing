@@ -131,6 +131,42 @@ The routing optimization framework follows a structured pipeline that simulates 
 
 ---
 
+## ⚙️ Installation & Setup
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/YOUR-USERNAME/quantum-routing-optimization.git
+```
+
+**2. Navigate into the project**
+```bash
+cd quantum-routing-optimization
+```
+
+**3. Run the simulation**
+
+Open MATLAB and run:
+```matlab
+main_simulation
+```
+
+This will generate the network topology, run routing simulations, compute performance metrics, visualize routing paths, and display packet flow animations.
+
+---
+
+## 🎯 Learning Goals
+
+This project explores concepts from:
+
+- Green Networking
+- Multi-objective optimization
+- Network routing algorithms
+- Quantum-inspired optimization methods
+- Graph theory in communication networks
+- MATLAB-based network simulation
+
+---
+
 ## ⚠️ Disclaimer
 
 **Note:** This project is a **research simulation for educational purposes.**
