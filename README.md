@@ -1,52 +1,122 @@
 # ⚡ Quantum-Inspired Energy-Aware Network Routing
 
-## Sustainable Multi-Objective Routing Optimization in Communication Networks
+::: {align="center"}
+### Sustainable Multi-Objective Routing using QUBO-Inspired Optimization
 
-A MATLAB-based simulation framework for evaluating latency-aware,
-energy-aware, and quantum-inspired routing strategies for greener
-communication networks.
+*A research-oriented MATLAB simulation exploring greener communication
+networks through latency, energy, and carbon-aware routing.*
+
+![MATLAB](https://img.shields.io/badge/MATLAB-R2024+-orange)
+![Research](https://img.shields.io/badge/Type-Research-blue)
+![QUBO](https://img.shields.io/badge/Optimization-QUBO-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+:::
 
 ------------------------------------------------------------------------
 
-## 🚀 Overview
+## 🌍 Why this project?
 
-Modern communication networks must balance performance with
-sustainability. Traditional routing algorithms primarily optimize
-shortest paths or latency, often overlooking electrical energy
-consumption and carbon emissions.
+Modern routing protocols are optimized primarily for **latency** while
+largely ignoring the environmental impact of communication networks.
 
-This project presents a MATLAB-based research simulation that evaluates
-three routing strategies:
+This project investigates whether **quantum-inspired optimization** can
+improve routing decisions by simultaneously minimizing:
 
--   Shortest Path Routing
+-   ⚡ Energy Consumption
+-   🌱 Carbon Emissions
+-   ⏱️ Network Latency
+
+Instead of requiring quantum hardware, the optimization is evaluated
+using a **QUBO-inspired objective function** inside a classical MATLAB
+simulation.
+
+------------------------------------------------------------------------
+
+# 📸 Project Preview
+
+> Place these images inside `/screenshots/`
+
+## Network Topology
+
+![Network](screenshots/Network%20Topology.jpg)
+
+## Routing Comparison
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Shortest Path                                              Energy Aware                                              Quantum Inspired
+  ---------------------------------------------------------- --------------------------------------------------------- ------------------------------------------------------------
+  ![](screenshots/Packet%20Flow%20-%20Shortest%20Path.jpg)   ![](screenshots/Packet%20Flow%20-%20Energy%20Aware.jpg)   ![](screenshots/Packet%20Flow%20-%20Quantum%20Routing.jpg)
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# ✨ Highlights
+
+-   Realistic Waxman topology generation
+-   Yen's K-Shortest Paths candidate generation
+-   Classical Shortest Path Routing
 -   Energy-Aware Routing
--   Quantum-Inspired Multi-Objective Routing
-
-The framework generates communication topologies using the Waxman
-probabilistic graph model, produces candidate routes using Yen's
-K-Shortest Paths algorithm, and evaluates routing decisions using a
-QUBO-inspired multi-objective cost function combining latency, energy
-consumption, and carbon intensity.
-
-Although inspired by QUBO and QAOA concepts, all optimization is
-performed using classical MATLAB computation.
+-   Quantum-inspired QUBO optimization
+-   300 simulated traffic flows
+-   Carbon-aware routing evaluation
+-   Telemetry-driven performance analysis
+-   MATLAB visualizations and packet flow simulation
 
 ------------------------------------------------------------------------
 
-## ✨ Features
+# 🧠 Research Contribution
 
--   Waxman topology generation
--   Yen's K-Shortest Paths routing
--   Shortest Path Routing
--   Energy-Aware Routing
--   Quantum-Inspired Routing heuristic
--   300-flow routing simulation
--   Energy, Carbon and PEI evaluation
--   Network visualization and packet flow animation
+Unlike conventional routing approaches, this work formulates routing as
+a **multi-objective optimization problem**.
+
+The optimization simultaneously considers:
+
+-   Network latency
+-   Link energy consumption
+-   Node carbon intensity
+
+The routing objective is transformed into a **Quadratic Unconstrained
+Binary Optimization (QUBO)** formulation inspired by QAOA.
 
 ------------------------------------------------------------------------
 
-## 📊 Simulation Summary
+# 🏗️ System Pipeline
+
+``` text
+Waxman Network
+      │
+      ▼
+Candidate Path Generation
+(Yen's K Shortest Paths)
+      │
+      ▼
+Routing Algorithms
+ ├── Shortest Path
+ ├── Energy Aware
+ └── Quantum Inspired
+      │
+      ▼
+Telemetry Collection
+      │
+      ▼
+Performance Evaluation
+(Energy • Carbon • PEI)
+```
+
+------------------------------------------------------------------------
+
+# ⚙️ Routing Algorithms
+
+  Algorithm           Latency   Energy   Carbon
+  ------------------ --------- -------- --------
+  Shortest Path         ✅        ❌       ❌
+  Energy Aware          ✅        ✅       ❌
+  Quantum Inspired      ✅        ✅       ✅
+
+------------------------------------------------------------------------
+
+# 📊 Experimental Setup
 
   Parameter            Value
   ----------------- --------
@@ -58,43 +128,54 @@ performed using classical MATLAB computation.
 
 ------------------------------------------------------------------------
 
-## 🧰 Tech Stack
+# 📈 Results
 
--   MATLAB
--   Graph Theory
--   Waxman Network Model
--   Dijkstra Algorithm
--   Yen's K-Shortest Paths
--   QUBO-inspired Cost Function
+## Average Energy Consumption
+
+![](screenshots/Average%20Energy%20Consumption.jpg)
+
+## Average Carbon Emissions
+
+![](screenshots/Average%20Carbon%20Emissions.jpg)
+
+## Path Efficiency Indicator
+
+![](screenshots/Average%20PEI.jpg)
+
+## Distribution Comparison
+
+![](screenshots/Boxplot.jpg)
 
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ``` text
-main_simulation.m
-generate_waxman_topology.m
-compute_link_metrics.m
-compute_metrics.m
-yen_k_shortest_paths.m
-shortest_path_routing.m
-energy_aware_routing.m
-qaoa_routing_simulated.m
-plot_results.m
-plot_network_topology.m
-animate_packet_flow.m
+.
+├── screenshots/
+├── main_simulation.m
+├── generate_waxman_topology.m
+├── shortest_path_routing.m
+├── energy_aware_routing.m
+├── qaoa_routing_simulated.m
+├── yen_k_shortest_paths.m
+├── compute_metrics.m
+├── compute_link_metrics.m
+├── plot_network_topology.m
+├── plot_results.m
+└── animate_packet_flow.m
 ```
 
 ------------------------------------------------------------------------
 
-## ⚙️ Installation
+# 🚀 Getting Started
 
 ``` bash
 git clone https://github.com/Ria-Chadha-05/Quantum-Inspired-Energy-Aware-Network-Routing.git
 cd Quantum-Inspired-Energy-Aware-Network-Routing
 ```
 
-Run in MATLAB:
+Run in MATLAB
 
 ``` matlab
 main_simulation
@@ -102,19 +183,23 @@ main_simulation
 
 ------------------------------------------------------------------------
 
-## 🔬 Research Note
+# 🔬 Future Work
 
-This project investigates quantum-inspired routing strategies within a
-classical MATLAB simulation framework.
-
-The routing objective is QUBO-inspired and influenced by concepts from
-QAOA. No quantum hardware or quantum circuit execution is performed.
+-   Larger-scale communication networks
+-   SDN integration
+-   Dynamic traffic workloads
+-   Real quantum backend evaluation
+-   Hybrid quantum-classical optimization
 
 ------------------------------------------------------------------------
 
-## 🚀 Future Work
+# 📚 Citation
 
--   Larger network topologies
--   Dynamic traffic models
--   Additional routing baselines
--   Integration with quantum optimization frameworks
+If this repository contributes to your work, please consider citing the
+accompanying paper.
+
+------------------------------------------------------------------------
+
+::: {align="center"}
+### ⭐ If you found this project useful, consider giving it a star.
+:::
