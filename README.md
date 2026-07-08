@@ -1,7 +1,7 @@
 # ⚡ Quantum-Inspired Energy-Aware Network Routing
 
-::: {align="center"}
-### Sustainable Multi-Objective Routing using QUBO-Inspired Optimization
+<div align="center">
+Sustainable Multi-Objective Routing using QUBO-Inspired Optimization
 
 *A research-oriented MATLAB simulation exploring greener communication
 networks through latency, energy, and carbon-aware routing.*
@@ -10,7 +10,7 @@ networks through latency, energy, and carbon-aware routing.*
 ![Research](https://img.shields.io/badge/Type-Research-blue)
 ![QUBO](https://img.shields.io/badge/Optimization-QUBO-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
-:::
+</div>
 
 ------------------------------------------------------------------------
 
@@ -34,20 +34,24 @@ simulation.
 
 # 📸 Project Preview
 
-> Place these images inside `/screenshots/`
 
 ## Network Topology
 
-![Network](screenshots/Network%20Topology.jpg)
+![Network](screenshots/network-topology.jpg)
 
 ## Routing Comparison
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Shortest Path                                              Energy Aware                                              Quantum Inspired
-  ---------------------------------------------------------- --------------------------------------------------------- ------------------------------------------------------------
-  ![](screenshots/Packet%20Flow%20-%20Shortest%20Path.jpg)   ![](screenshots/Packet%20Flow%20-%20Energy%20Aware.jpg)   ![](screenshots/Packet%20Flow%20-%20Quantum%20Routing.jpg)
+<p align="center">
+  <img src="screenshots/packet-flow-shortest.jpg" width="32%">
+  <img src="screenshots/packet-flow-energy.jpg" width="32%">
+  <img src="screenshots/packet-flow-quantum.jpg" width="32%">
+</p>
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<p align="center">
+<b>Shortest Path</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Energy Aware</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Quantum Inspired</b>
+</p>
 
 ------------------------------------------------------------------------
 
@@ -108,23 +112,23 @@ Performance Evaluation
 
 # ⚙️ Routing Algorithms
 
-  Algorithm           Latency   Energy   Carbon
-  ------------------ --------- -------- --------
-  Shortest Path         ✅        ❌       ❌
-  Energy Aware          ✅        ✅       ❌
-  Quantum Inspired      ✅        ✅       ✅
+| Algorithm | Latency | Energy | Carbon |
+|-----------|:--------:|:------:|:-------:|
+| **Shortest Path** | ✅ | ❌ | ❌ |
+| **Energy Aware** | ✅ | ✅ | ❌ |
+| **Quantum Inspired** | ✅ | ✅ | ✅ |
 
 ------------------------------------------------------------------------
 
 # 📊 Experimental Setup
 
-  Parameter            Value
-  ----------------- --------
-  Nodes                   40
-  Traffic Flows          300
-  Candidate Paths         12
-  Network Model       Waxman
-  Platform            MATLAB
+| Parameter | Value |
+|-----------|------:|
+| **Nodes** | 40 |
+| **Traffic Flows** | 300 |
+| **Candidate Paths** | 12 |
+| **Network Model** | Waxman |
+| **Platform** | MATLAB |
 
 ------------------------------------------------------------------------
 
@@ -132,15 +136,15 @@ Performance Evaluation
 
 ## Average Energy Consumption
 
-![](screenshots/Average%20Energy%20Consumption.jpg)
+![](screenshots/average-energy.jpg)
 
 ## Average Carbon Emissions
 
-![](screenshots/Average%20Carbon%20Emissions.jpg)
+![](screenshots/average-carbon.jpg)
 
 ## Path Efficiency Indicator
 
-![](screenshots/Average%20PEI.jpg)
+![](screenshots/average-pei.jpg)
 
 ## Distribution Comparison
 
@@ -195,11 +199,17 @@ main_simulation
 
 # 📚 Citation
 
-If this repository contributes to your work, please consider citing the
+If this repository contributes to your work, please consider citing the 
 accompanying paper.
 
 ------------------------------------------------------------------------
 
-::: {align="center"}
-### ⭐ If you found this project useful, consider giving it a star.
-:::
+# 📚 Author 
+
+Ria Chadha
+
+------------------------------------------------------------------------
+
+<div align="center">
+⭐ If you found this project useful, consider giving it a star.
+</div>
